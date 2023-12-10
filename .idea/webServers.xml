@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4d2a976f-c98e-45f5-8c83-d52da4b79487" name="py-ssh">
+        <fileTransfer rootFolder="/home/py" accessType="SFTP" host="127.0.0.1" port="2222" sshConfigId="cee11cc5-2310-4ee4-8f04-db3de8082afa" sshConfig="py@127.0.0.1:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
