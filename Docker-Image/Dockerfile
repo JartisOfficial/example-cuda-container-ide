@@ -2,15 +2,12 @@ FROM anibali/pytorch:1.13.0-cuda11.8
 
 USER root
 # Set up time zone.
-ENV TZ=CET
+ENV DEBIAN_FRONTEND="noninteractive" TZ="Europe/Berlin"
 RUN sudo ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 
 ARG my_user="py" 
 ARG my_password="py"
 WORKDIR "/"
-
-
-ENV DEBIAN_FRONTEND="noninteractive" TZ="Europe/Berlin"
 
 RUN apt-get update && apt-get install -y git openssh-server tmux minicom sudo vim bmon htop mc supervisor
 
